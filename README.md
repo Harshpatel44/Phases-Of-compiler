@@ -2,6 +2,14 @@
 These Repository shows the Compilation Stages of a C program with a User Interface
 
 
+How To USE:
+1.Enter the path of the C language file (.C) in Entry Box 
+2.Click on Pre-processing Button 
+3.Then Compilation , Assembly & finally Linking
+4.As you Click , You will find the content 
+5.The Files of Preprocessing, Compiling , Assembly are also saved in the path
+
+
 The four stages for a C program to become an executable are the following:
 
 1.Pre-processing
