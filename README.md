@@ -18,16 +18,19 @@ The four stages for a C program to become an executable are the following:<br>
 <b>1. Preprocessing</b>
 <p>This is the first stage of compilation process where preprocessor directives (macros and header files are most common) are expanded. To perform this step gcc executes the following command internally.</p><br>
 <i>[root@host ~]# cpp helloworld.c > helloworld.i</i><br>
+<img src="results/preprocessing.PNG">
 <br>
 <b>2. Compilation</b>
 <p>In this phase compilation proper takes place. The compiler (ccl) translates helloworld.i into helloworld.s. File helloworld.s contains assembly code. You can explicitly tell gcc to translate helloworld.i to helloworld.s by executing the following command.</p>
 <br>
 <i>[root@host ~]# gcc -S helloworld.i</i><br>
+<img src="results/compile.PNG">
 <br>
 <b>3. Assembly</b>
 <p>Here, the assembler (as) translates helloworld.s into machine language instructions, and generates an object file helloworld.o. You can invoke the assembler at your own by executing the following command.</p>
 <br>
 <i>[root@host ~]# as helloworld.s -o helloworld.o</i><br>
+<img src="results/assembly.PNG">
 <br>
 <b>4. Linking</b>
 <p>This is the final stage in compilation of "Hello World!" program. This phase links object files to produce final executable file.</p><br>
