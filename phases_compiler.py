@@ -1,4 +1,4 @@
-import Tkinter as tk
+import tkinter as tk
 import os
 main=tk.Tk()
 main.title("Phases Of Compiler")
@@ -20,7 +20,7 @@ def compiling(input_text):
 def assembly(input_text):
 	input_text=input_text.get()
 	os.system("as "+input_text[:-2]+".s -o "+input_text[:-2]+".o")
-	f=open(input_text[:-2]+".o",'r')
+	f=open(input_text[:-2]+".o",'r', errors='ignore')
 	text_box.delete(1.0,tk.END)
 	text_box.insert(tk.END,f.read())
 input_text=tk.Entry(main,width="50")
